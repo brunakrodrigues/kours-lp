@@ -20,7 +20,7 @@ const heroImage = '/frame-hero.png';
 import Navbar from '../NavBar';
 
 export default function Hero() {
-  const headingFontSize = useBreakpointValue({ base: '6xl', md: '4xl' });
+  const headingFontSize = useBreakpointValue({ base: '5xl', md: '6xl'});
   const textFontSize = useBreakpointValue({ base: 'lg', md: 'xl' });
   const stackDirection = useBreakpointValue({ base: 'column', md: 'row' });
 

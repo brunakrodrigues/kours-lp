@@ -13,6 +13,9 @@ const koursTheme = extendTheme({
       600: '#242424',
       700: '#7B7E84',
     },
+    dark: {
+      100: '#181818'
+    }
   },
   fonts: {
     body: 'Inter, sans-serif',

@@ -7,7 +7,7 @@ const koursTheme = extendTheme({
     text: '#141924',
     gray: {
       200: '#BDC8D3',
-      300: '#E6E6E6',
+      300: '#8b8b8b',
       400: '#AEAEAE',
       500: '#313131',
       600: '#242424',

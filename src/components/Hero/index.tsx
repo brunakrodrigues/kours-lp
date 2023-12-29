@@ -5,7 +5,6 @@ import {
   Button,
   Container,
   Flex,
-  HStack,
   Heading,
   Input,
   InputGroup,
@@ -23,7 +22,7 @@ import Navbar from '../NavBar';
 export default function Hero() {
   const headingFontSize = useBreakpointValue({ base: '6xl', md: '4xl' });
   const textFontSize = useBreakpointValue({ base: 'lg', md: 'xl' });
-  const stackDirection = useBreakpointValue({ base: 'row', md: 'column' });
+  const stackDirection = useBreakpointValue({ base: 'column', md: 'row' });
 
   return (
     <main>
@@ -46,7 +45,7 @@ export default function Hero() {
                 Crie, compartilhe e monetize seu conhecimento com cursos e e-books online.
               </Text>
               <Box p="1rem" w="full" maxW="xl" bg="#28394b" borderRadius="8">
-                <Stack direction={stackDirection} spacing={4} align="stretch">
+              <Stack direction={stackDirection} spacing={4} align="stretch">
                   <InputGroup>
                     <InputLeftElement
                       pointerEvents="none"

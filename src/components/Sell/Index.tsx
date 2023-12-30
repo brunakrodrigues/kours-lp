@@ -23,21 +23,21 @@ export default function Sell() {
   const flexDir = useBreakpointValue({ base: 'column', md: 'row' });
 
   return (
-    <>
-      <Box textAlign="center" fontWeight={600} my="4rem">
+    <Box bg="#F4F8FF">
+      <Box textAlign="center" fontWeight={600} py="4rem">
         <Heading color="gray.500" fontSize="5xl">Como posso vender?</Heading>
         <Text color="gray.300" fontWeight={500}>Você define o caminho! Oferecemos duas opções para que o seu objetivo seja alcançado.</Text>
       </Box>
       <Flex
-        direction={flexDir} // Usa a direção baseada no breakpoint
+        direction={flexDir}
         justifyContent="center"
-        alignItems="center" // Centraliza os cartões verticalmente para telas pequenas
-        wrap="wrap" // Permite que os cartões se envolvam conforme necessário
+        alignItems="center"
+        wrap="wrap"
         gap="4"
       >
         {cards.map((card, id) => {
           return (
-            <Box key={id} p='4' bg='white'>
+            <Box key={id} p='4'>
               <Box boxShadow='md' borderRadius='lg' overflow='hidden' maxW={{ base: '80vw', sm: '45vw', md: '30vw', lg: '30vw' }}>
                 <Image src={card.image} alt="Man with camera" />
                 <Box p="1rem">
@@ -74,6 +74,6 @@ export default function Sell() {
             h="30px"
           />
       </Flex>
-    </>
+    </Box>
   )
 }

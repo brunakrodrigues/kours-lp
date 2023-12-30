@@ -11,7 +11,6 @@ import {
   InputLeftElement,
   Stack,
   Text,
-  Image,
   useBreakpointValue
 } from '@chakra-ui/react'
 import NextImage from 'next/image';
@@ -21,7 +20,7 @@ const heroImage = '/frame-hero.png';
 import Navbar from '../NavBar';
 
 export default function Hero() {
-  const headingFontSize = useBreakpointValue({ base: '5xl', md: '6xl'});
+  const headingFontSize = useBreakpointValue({ base: '5xl', md: '6xl' });
   const textFontSize = useBreakpointValue({ base: 'lg', md: 'xl' });
   const stackDirection = useBreakpointValue({ base: 'column', md: 'row' });
 
@@ -46,7 +45,7 @@ export default function Hero() {
                 Crie, compartilhe e monetize seu conhecimento com cursos e e-books online.
               </Text>
               <Box p="1rem" w="full" maxW="xl" bg="#28394b" borderRadius="8">
-              <Stack direction={stackDirection} spacing={4} align="stretch">
+                <Stack direction={stackDirection} spacing={4} align="stretch">
                   <InputGroup>
                     <InputLeftElement
                       pointerEvents="none"
@@ -85,7 +84,7 @@ export default function Hero() {
               overflow="hidden"
               lineHeight="0"
             >
-              <Image
+              <NextImage
                 src={heroImage}
                 alt="Descrição da imagem"
                 width={1241}

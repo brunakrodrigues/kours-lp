@@ -5,6 +5,7 @@ import Features from "@/components/Benefits";
 import Platform from "@/components/Platform";
 import Results from "@/components/Results";
 import Sell from "@/components/Sell/Index";
+import StartFree from "@/components/StartFree";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <Platform />
       <Results />
       <Sell />
+      <StartFree />
     </ChakraProvider>
   )
 }

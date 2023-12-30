@@ -65,7 +65,7 @@ export default function Results() {
                 bottom="-100px"
                 zIndex="0"
               />
-              <Stack direction="column" spacing={2} mt="1rem" px="2rem" zIndex="1">
+              <Stack direction="column"justifyContent="center" spacing={2} mt="1rem" px="2rem" zIndex="1">
                 <Icon as={result.icon} w={12} h={12} color="blue.500" padding="8px"
                   background="#252525"
                   borderRadius="5px"

@@ -11,6 +11,7 @@ import {
   InputLeftElement,
   Stack,
   Text,
+  Image,
   useBreakpointValue
 } from '@chakra-ui/react'
 import NextImage from 'next/image';
@@ -84,7 +85,7 @@ export default function Hero() {
               overflow="hidden"
               lineHeight="0"
             >
-              <NextImage
+              <Image
                 src={heroImage}
                 alt="Descrição da imagem"
                 width={1241}

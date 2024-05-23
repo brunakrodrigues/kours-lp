@@ -6,6 +6,7 @@ import Platform from "@/components/Platform";
 import Results from "@/components/Results";
 import Sell from "@/components/Sell/Index";
 import StartFree from "@/components/StartFree";
+import Carousel from "@/components/Carousel";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Platform />
       <Results />
       <Sell />
+      <Carousel />
       <StartFree />
     </ChakraProvider>
   )
